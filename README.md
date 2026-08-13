@@ -1,973 +1,763 @@
-# 🎟️ EventSphere – Smart Event Management System
+# 💼 NexusHire – Job Portal Website
 
-EventSphere is a **Smart Event Management System** built with **Python and Django**. It provides a complete digital workflow for event organizers and attendees, including event management, ticket booking, QR-code ticketing, attendance verification, automated certificates, weather information, notifications, and role-based access.
+NexusHire is a modern **front-end Job Portal Website** designed to connect **job seekers and employers/recruiters** through a simple, responsive, single-page web application.
 
-The project is designed to make event management **paperless, faster, secure, and easier to manage**.
+The project is built using **HTML5, CSS3, Bootstrap, and JavaScript** with **browser localStorage** for client-side data persistence. It does not require a server, backend, or database. fileciteturn5file0L48-L62
 
 ---
 
 ## 📌 Project Overview
 
-Traditional event management often involves:
+Finding suitable jobs can be difficult for students and freshers, while employers need an easy way to publish job opportunities and attract suitable candidates.
 
-- Manual paper registration
-- Long queues during event check-in
-- Difficult ticket verification
-- Manual attendance management
-- Delayed certificate distribution
-- Limited event information for attendees
+**NexusHire** provides a centralized front-end platform where:
 
-EventSphere solves these problems through a centralized web application.
+- Job seekers can discover jobs.
+- Users can search and filter job listings.
+- Users can view complete job details.
+- Registered users can apply with one click.
+- Users can track their applications.
+- Users can create and update their profile.
+- Employers/recruiters can post job openings.
+- Job information is stored and managed on the client side.
 
-### Main Solution
-
-- 📱 Digital event registration
-- 🎫 Instant QR-code ticket generation
-- 📷 QR-based event check-in
-- 🌦️ Real-time weather information
-- 📄 Automated PDF certificates
-- 🔐 Role-based authentication
-- 📧 Email notifications
-- 📊 Event and attendance management
+The project focuses on **pure front-end engineering** using a Single-Page Application (SPA) approach. fileciteturn5file0L48-L62
 
 ---
 
-# ✨ Key Features
+# ✨ Features
 
-## 👥 1. Role-Based Access
+## 🔍 1. Advanced Job Search & Filtering
 
-EventSphere supports different user roles.
+NexusHire provides a multi-filter job search engine.
 
-### 👨‍💼 Admin
+### Available Filters
 
-Admin can:
-
-- Manage users
-- Manage organizers
-- Approve/reject events
-- Monitor events
-- Manage categories
-- View system information
-- Verify certificates
-- Monitor reports
-
-### 🎤 Organizer
-
-Organizers can:
-
-- Register and login
-- Manage profile
-- Create events
-- Edit events
-- Delete events
-- Upload event banners
-- Upload gallery images
-- Set event capacity
-- Create ticket types
-- Set ticket prices
-- View registrations
-- Scan QR tickets
-- Mark attendance
-- View revenue
-- View analytics
-- Download attendee lists
-- Send announcements
-- Generate certificates
-
-### 👤 Attendee / User
-
-Users can:
-
-- Register and login
-- Manage profile
-- Browse events
-- Search events
-- Filter events
-- View event details
-- Check weather
-- Book tickets
-- Download tickets
-- View QR tickets
-- Cancel bookings
-- Save favorite events
-- View booking history
-- Download certificates
-- Review events
-- Receive notifications
-
----
-
-# 🎫 2. Event Management
-
-Every event can contain:
-
-- Event title
-- Description
 - Category
-- Organizer
-- Venue
-- Address
-- City
-- Google Maps link
-- Event date
-- Event time
-- Registration deadline
-- Capacity
-- Available seats
-- Ticket types
-- Ticket price
-- Banner image
-- Gallery images
-- Event status
-- Approval status
+- Job type
+- Work mode
+- Experience level
+- Schedule
+- Salary range
 
-Organizers can manage their events through the organizer dashboard.
+### Job Categories
 
----
+- Frontend
+- Backend
+- Government
+- Healthcare
+- Finance
+- Management
+- Agriculture
+- Education
 
-# 🔎 3. Search, Filter & Sort
+### Job Types
 
-Users can search events by:
+- Fixed
+- Hourly
+- Contract
 
-- Event name
-- Organizer
-- Category
-- Location
+### Work Modes
 
-### Filters
+- Remote
+- Hybrid
+- Onsite
 
-- Date
-- City
-- Category
-- Price
-- Free/Paid
-- Upcoming
-- Completed
+### Experience Levels
 
-### Sorting
+- Junior
+- Mid
+- Senior
 
-- Latest
-- Popular
-- Highest Rated
-- Price
-- Date
+### Schedule
 
----
+- Full-Time
+- Part-Time
 
-# 🎟️ 4. Ticket Booking System
+### Salary
 
-Users can book tickets for available events.
-
-The booking workflow includes:
+The salary range can be filtered from approximately:
 
 ```text
-Browse Event
-     ↓
-Select Ticket
-     ↓
-Select Quantity
-     ↓
-Confirm Booking
-     ↓
-Generate Ticket
-     ↓
-Generate QR Code
-     ↓
-Download Ticket
+₹15,000 → ₹1,20,000 per month
 ```
 
-The system supports:
-
-- Ticket quantity
-- Booking confirmation
-- Booking history
-- Booking status
-- QR ticket
-- PDF ticket
-- Ticket cancellation
-- Refund status
+The project supports sorting by relevance, salary, and newest jobs. fileciteturn5file2L342-L362
 
 ---
 
-# 📱 5. QR Code Ticket System
+# 👤 2. Job Seeker Module
 
-Every successful booking generates a unique QR code.
+Job seekers can:
 
-The QR code can contain:
-
-- Booking ID
-- User ID
-- Event ID
-- Ticket Type
-- Verification Token
-- Timestamp
-
-### Organizer QR Workflow
-
-```text
-User Books Ticket
-       ↓
-Unique QR Generated
-       ↓
-Organizer Scans QR
-       ↓
-Ticket Verification
-       ↓
-Duplicate Entry Check
-       ↓
-Attendance Marked
-```
-
-The organizer can:
-
-- Scan QR codes
-- Verify tickets
-- Prevent duplicate entry
-- Mark attendance
-- View scan history
-
-Tickets can be downloaded as PDF files.
-
----
-
-# 📋 6. Attendance Management
-
-Attendance can be recorded through:
-
-- QR Code scanning
-- Manual entry
-
-### Attendance Status
-
-```text
-Present
-Absent
-```
-
-The system records:
-
-- Check-in time
-- Attendance status
-- Attendance reports
-- Attendance analytics
-
-Certificates are generated after attendance is confirmed.
-
----
-
-# 🏆 7. Automated Certificate System
-
-After event completion and attendance confirmation, the system can generate a PDF certificate automatically.
-
-### Certificate Contains
-
-- Participant name
-- Event name
-- Organizer name
-- Event date
-- Certificate ID
-- QR verification
-- Organization logo
-- Digital signature
-- Issue date
-
-### Certificate Features
-
-- Download certificate PDF
-- Certificate verification
-- Admin verification
-- Organizer download
-- User dashboard download
-
----
-
-# 🌦️ 8. Real-Time Weather
-
-EventSphere can display weather information on event pages.
-
-The weather functionality uses:
-
-- Python Requests
-- OpenWeatherMap API
-
-Users can check weather conditions before attending an event.
-
----
-
-# 🔔 9. Notification System
-
-The system supports:
-
-- In-app notifications
-- Email notifications
-
-### User Notifications
-
-Examples:
-
-- Registration successful
-- Welcome email
-- Email verification
-- Booking successful
-- Ticket generated
-- Payment successful
-- Event approved
-- Event cancelled
-- Event rescheduled
-- Venue changed
-- 7-day reminder
-- 1-day reminder
-- 1-hour reminder
-- Event started
-- Event completed
-- Certificate ready
-- Organizer announcement
-
-### Organizer Notifications
-
-- Event approved
-- Event rejected
-- New registration
-- Event full
-- Reviews received
-- Revenue update
-- Certificate generated
-
-### Admin Notifications
-
-- New organizer registration
-- New event pending
-- Reports submitted
-- Payment issues
-- System alerts
-
-### Notification Center
-
-Users can:
-
-- View notifications
-- Check unread count
-- Mark notifications as read
-- Delete notifications
-- View notification history
-
----
-
-# ⭐ 10. Reviews & Ratings
-
-Users can:
-
-- Rate an event from 1–5
-- Write reviews
-- Edit reviews
-- Delete reviews
-
-Organizers can:
-
-- Reply to reviews
-
-The system displays:
-
-- Average rating
-- Total reviews
-
----
-
-# ❤️ 11. Favorites
-
-Users can save events for later.
-
-Features:
-
-- Add event to favorites
-- Remove event from favorites
-- View favorite events
-
----
-
-# 📊 12. Dashboards
-
-## Admin Dashboard
-
-The admin dashboard can display:
-
-- Total users
-- Total organizers
-- Total events
-- Revenue
-- Tickets sold
-- Certificates
-- Attendance rate
-- Reviews
-
-### Admin Charts
-
-- Monthly revenue
-- Event categories
-- Ticket sales
-- Attendance
-- User growth
-
----
-
-## Organizer Dashboard
-
-Organizer dashboard can display:
-
-- Total events
-- Revenue
-- Registrations
-- Tickets sold
-- Attendance
-- Certificates
-- Reviews
-
-### Organizer Charts
-
-- Event performance
-- Revenue
-- Attendance
-- Registrations
-
----
-
-## User Dashboard
-
-User dashboard can display:
-
-- Upcoming events
-- Bookings
-- Certificates
-- Favorites
-- Notifications
-
----
-
-# 📄 13. Reports
-
-The system can generate reports such as:
-
-- Attendance Report
-- Revenue Report
-- Booking Report
-- User Report
-- Event Report
-
-Reports can be exported as:
-
-- CSV
-- PDF
-
----
-
-# 💳 14. Payment Module
-
-The project can be designed to support payment integration.
-
-Possible payment providers:
-
-- Razorpay
-- Stripe
-- PayPal
-
-For academic/demo usage, mock payments can be used while maintaining a realistic booking workflow.
-
----
-
-# 🔐 15. Authentication & Security
-
-The authentication module supports:
-
-- User registration
+- Register an account
 - Login
-- JWT authentication
-- Role-based authorization
-- Password encryption
-- Secure login
-- Forgot password
-- Password reset
-- Email verification
-- Protected routes
+- Create a profile
+- Upload a profile photo
+- Search jobs
+- Filter jobs
+- Sort jobs
+- View job details
+- Apply for jobs
+- Track applications
+- View application status
+- Logout
 
-Different dashboards and permissions are provided according to the user's role.
+The platform is designed particularly for students, freshers, and other job seekers. fileciteturn5file0L94-L109
 
 ---
 
-# 🏗️ System Architecture
+# 🏢 3. Employer / Recruiter Module
 
-EventSphere follows a **Django MVT architecture** with REST API services.
+Employers/recruiters can work with job listings containing:
+
+- Job title
+- Description
+- Salary
+- Required skills
+- Experience level
+- Work mode
+- Job schedule
+- Job type
+
+The project also supports collecting and viewing applications associated with job listings. fileciteturn5file0L103-L109
+
+---
+
+# 🔐 4. Authentication System
+
+NexusHire contains Login and Signup flows using modal interfaces.
+
+### Login Validation
+
+The system checks:
+
+- Email format
+- Password requirements
+- Stored credentials
+
+Invalid credentials produce an inline error without a page reload.
+
+### Signup Validation
+
+The system validates:
+
+- Name
+- Email
+- Email uniqueness
+- Password
+- Confirm password
+
+The password must contain:
+
+- Uppercase letter
+- Lowercase letter
+- Number
+- Special character
+- Minimum 8 characters
+
+The password strength indicator displays:
 
 ```text
-                    ┌─────────────────────┐
-                    │      Frontend       │
-                    │ HTML/CSS/JS/Bootstrap│
-                    └──────────┬──────────┘
-                               │
-                               ↓
-                    ┌─────────────────────┐
-                    │   Django Backend    │
-                    │   Views / APIs      │
-                    └──────────┬──────────┘
-                               │
-              ┌────────────────┼────────────────┐
-              ↓                ↓                ↓
-       ┌────────────┐   ┌────────────┐   ┌────────────┐
-       │  Accounts  │   │   Events   │   │  Bookings  │
-       └────────────┘   └────────────┘   └────────────┘
-              │                │                │
-              └────────────────┼────────────────┘
-                               ↓
-                    ┌─────────────────────┐
-                    │   Django ORM / DB   │
-                    │      SQLite3        │
-                    └─────────────────────┘
-                               │
-          ┌────────────────────┼────────────────────┐
-          ↓                    ↓                    ↓
-     QR Generator         PDF Generator        Weather API
-      qrcode              ReportLab          OpenWeatherMap
+Weak → Medium → Strong
 ```
+
+User information is stored in browser `localStorage`. fileciteturn5file0L116-L133
+
+> **Security note:** Because this is a front-end-only academic project, credentials stored in browser localStorage should not be considered production-grade authentication.
 
 ---
 
-# 🧩 Django Application Modules
+# 📝 5. One-Click Job Application
 
-The project is organized into separate Django applications.
+Logged-in users can apply directly from a job listing.
 
-| App | Responsibility |
+Application workflow:
+
+```text
+Login
+  ↓
+Browse Jobs
+  ↓
+Open Job Details
+  ↓
+Click Apply
+  ↓
+Application Saved
+  ↓
+Status Updated
+  ↓
+View in My Applications
+```
+
+Once an application is submitted, the UI changes to indicate that the job has already been applied for. Application data is stored in localStorage. fileciteturn5file0L69-L87
+
+---
+
+# 📋 6. My Applications Tracker
+
+Users can view jobs they have applied for.
+
+Application information includes:
+
+- Company name
+- Job role
+- Salary
+- Application status
+
+The application tracker provides a centralized view of submitted applications. fileciteturn5file0L80-L87
+
+---
+
+# 📊 7. Personal Dashboard
+
+The user dashboard provides:
+
+- Personalized welcome message
+- Profile completion percentage
+- Application count
+- Quick links
+- Profile information
+- Application activity
+
+The dashboard includes an animated profile completion bar. fileciteturn5file3L411-L426
+
+---
+
+# 👤 8. Dynamic Profile
+
+Users can manage their profile information.
+
+### Profile Features
+
+- Name
+- Email
+- Profile photo
+- Dynamic avatar
+- Initials fallback
+- Profile completion
+
+Users can upload an image using:
+
+```javascript
+<input type="file">
+```
+
+The browser `FileReader` API is used to preview the image as Base64 data. fileciteturn5file3L417-L426
+
+---
+
+# 💾 9. localStorage Data Persistence
+
+Since NexusHire has no backend or database, browser localStorage is used for data persistence.
+
+The project stores information such as:
+
+```text
+User
+ ├── name
+ ├── email
+ ├── password
+ └── photo
+
+Applications
+ └── APPLIED_JOBS
+```
+
+The session can be detected when the application loads, and logout clears the active session without removing the stored user data. fileciteturn5file3L422-L426
+
+---
+
+# 🧠 10. Dynamic Job Rendering
+
+Jobs are represented as JavaScript objects inside the application's job list.
+
+Filtering works by:
+
+```text
+User changes filter
+       ↓
+filterJobs()
+       ↓
+renderJobGrid()
+       ↓
+Array.filter()
+       ↓
+Matching jobs displayed
+```
+
+The results count and active filter tags are updated dynamically without reloading the page. fileciteturn5file2L356-L362
+
+---
+
+# 🎨 UI/UX Design
+
+NexusHire uses a modern professional job-portal interface.
+
+## Color System
+
+| Color | Usage |
 |---|---|
-| `accounts` | Authentication, profiles, roles and user decorators |
-| `events` | Event listings, banners, search, filters and event management |
-| `bookings` | Reservations, QR generation and booking workflow |
-| `certificates` | PDF certificate generation and verification |
-| `api` | REST API endpoints, serializers and custom permissions |
+| Navy `#0F172A` | Main backgrounds |
+| Electric Blue `#2563EB` | Actions and links |
+| Green | Success states |
+| Amber | Warnings and salary |
+| Slate | Secondary text |
 
-This modular structure makes the application easier to maintain and extend.
+## Typography
+
+The project uses:
+
+- **Sora** for headings
+- **DM Sans** for body text
+
+## UI Features
+
+- Responsive job cards
+- Hover effects
+- Card shadows
+- Toast notifications
+- Modal dialogs
+- Backdrop blur
+- Responsive navigation
+- Animated transitions
+
+The design uses CSS Grid/Flexbox and adapts to smaller screens. fileciteturn5file3L433-L451
+
+---
+
+# 📱 Responsive Design
+
+The website is designed to work across:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+The CSS Grid layout collapses to a single-column layout on smaller screens, with non-essential navigation text hidden on mobile. fileciteturn5file3L445-L451
+
+---
+
+# 🏗️ Application Architecture
+
+NexusHire follows a client-side SPA architecture.
+
+```text
+                 ┌──────────────────────┐
+                 │      NexusHire       │
+                 │     Frontend SPA     │
+                 └──────────┬───────────┘
+                            │
+            ┌───────────────┼───────────────┐
+            ↓               ↓               ↓
+        HTML5             CSS3          JavaScript
+            │               │               │
+            │               │               ├── Authentication
+            │               │               ├── Job Search
+            │               │               ├── Filtering
+            │               │               ├── Applications
+            │               │               ├── Dashboard
+            │               │               └── Profile
+            │               │
+            └───────────────┼───────────────┘
+                            ↓
+                     Browser localStorage
+```
+
+There is currently:
+
+```text
+❌ No backend
+❌ No server
+❌ No database
+```
+
+This is explicitly a front-end-only implementation. fileciteturn5file0L54-L60
 
 ---
 
 # 🛠️ Technology Stack
 
-## Backend
+| Technology | Purpose |
+|---|---|
+| HTML5 | Website structure |
+| CSS3 | Styling, layout and animations |
+| Bootstrap | Responsive UI components |
+| JavaScript | Application logic and interactivity |
+| Font Awesome | Icons |
+| Google Fonts | Typography |
+| Browser localStorage | Client-side data persistence |
 
-- Python 3.10+
-- Django
-- Django ORM
-- Django REST Framework
-
-## Frontend
-
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap 5
-
-## Database
-
-- SQLite3
-- Django ORM
-
-## PDF Generation
-
-- ReportLab
-
-## QR Code
-
-- Python `qrcode` library
-
-## Weather
-
-- Requests
-- OpenWeatherMap API
-
-## Authentication
-
-- JWT
-- Role-Based Authorization
+The project presentation identifies HTML5, CSS3, JavaScript, Font Awesome, Google Fonts, and Bootstrap as the main technologies. fileciteturn5file5L721-L748
 
 ---
 
 # 📂 Project Structure
 
+For the uploaded project, the main website is provided as:
+
 ```text
-EventSphere/
+NexusHire/
 │
-├── manage.py
-│
-├── project/
-│   ├── settings.py
-│   ├── urls.py
-│   ├── wsgi.py
-│   └── asgi.py
-│
-├── accounts/
-│   ├── models.py
-│   ├── views.py
-│   ├── urls.py
-│   ├── forms.py
-│   └── templates/
-│
-├── events/
-│   ├── models.py
-│   ├── views.py
-│   ├── urls.py
-│   ├── forms.py
-│   └── templates/
-│
-├── bookings/
-│   ├── models.py
-│   ├── views.py
-│   ├── urls.py
-│   └── templates/
-│
-├── certificates/
-│   ├── models.py
-│   ├── views.py
-│   ├── utils.py
-│   └── templates/
-│
-├── api/
-│   ├── serializers.py
-│   ├── views.py
-│   ├── urls.py
-│   └── permissions.py
-│
-├── static/
-├── media/
-├── templates/
-├── db.sqlite3
-├── requirements.txt
+├── nexushire_updated_fixed.html
 └── README.md
 ```
 
-> The exact folder names may vary depending on the project version.
+The HTML file contains the page structure, styling, JavaScript logic, job data, authentication logic, filtering, dashboard, profile management, and application functionality.
 
----
-
-# ⚙️ Installation & Setup
-
-## 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/eventsphere.git
-cd eventsphere
-```
-
----
-
-## 2. Create a Virtual Environment
-
-### macOS / Linux
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### Windows
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
----
-
-## 3. Install Dependencies
-
-Create or use the project's `requirements.txt` file.
-
-Example:
+If you later separate the project into individual files, a recommended structure is:
 
 ```text
-Django
-djangorestframework
-djangorestframework-simplejwt
-Pillow
-qrcode
-reportlab
-requests
-django-cors-headers
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
+NexusHire/
+│
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── assets/
+│   ├── images/
+│   └── icons/
+└── README.md
 ```
 
 ---
 
-# 🗄️ Database Setup
+# ▶️ How to Run
 
-Run Django migrations:
+NexusHire is a front-end project, so no Python, Node.js, database, or backend server is required.
 
-```bash
-python manage.py makemigrations
-python manage.py migrate
-```
+## Method 1 — Open Directly
 
-Create an administrator account:
-
-```bash
-python manage.py createsuperuser
-```
-
-Follow the terminal instructions to enter:
+Simply double-click:
 
 ```text
-Username
-Email
-Password
+nexushire_updated_fixed.html
 ```
+
+It will open in your browser.
 
 ---
 
-# ▶️ Run the Project
+## Method 2 — VS Code
 
-Start the Django development server:
+1. Open the project folder in VS Code.
+2. Open `nexushire_updated_fixed.html`.
+3. Install the **Live Server** extension.
+4. Right-click the HTML file.
+5. Select **Open with Live Server**.
 
-```bash
-python manage.py runserver
-```
-
-Open the application in your browser at:
-
-```text
-http://127.0.0.1:8000/
-```
+The website will open in your browser.
 
 ---
 
-# 🔑 Admin Panel
-
-Django provides an administration interface.
-
-Run:
-
-```bash
-python manage.py runserver
-```
-
-Then open:
-
-```text
-http://127.0.0.1:8000/admin/
-```
-
-Login using the superuser credentials created earlier.
-
----
-
-# 🔄 Complete System Workflow
+# 🔄 User Workflow
 
 ```text
                     START
                       │
                       ↓
-             ┌────────────────┐
-             │ User Registers │
-             └───────┬────────┘
-                     ↓
-             ┌────────────────┐
-             │ Email / Login  │
-             └───────┬────────┘
-                     ↓
-              ┌──────┴──────┐
-              │             │
-              ↓             ↓
-          ATTENDEE       ORGANIZER
-              │             │
-              ↓             ↓
-       Browse Events    Create Event
-              │             │
-              ↓             ↓
-       Search / Filter   Event Approval
-              │             │
-              ↓             ↓
-        Book Ticket      Manage Event
-              │
-              ↓
-       QR Ticket Generated
-              │
-              ↓
-       Attend Event
-              │
-              ↓
-         QR Check-in
-              │
-              ↓
-       Attendance Saved
-              │
-              ↓
-      Certificate Generated
-              │
-              ↓
-       Download Certificate
+              ┌───────────────┐
+              │ Open NexusHire│
+              └───────┬───────┘
+                      ↓
+             ┌─────────────────┐
+             │ Login / Register│
+             └────────┬────────┘
+                      ↓
+               ┌──────┴───────┐
+               │              │
+               ↓              ↓
+          Job Seeker       Recruiter
+               │              │
+               ↓              ↓
+          Browse Jobs      Post Jobs
+               │              │
+               ↓              ↓
+        Search / Filter    Job Details
+               │              │
+               ↓              ↓
+          Job Details      Applications
+               │
+               ↓
+           Apply
+               │
+               ↓
+       My Applications
+               │
+               ↓
+          Track Status
 ```
 
 ---
 
-# 📈 Project Impact
+# 🔎 Job Filtering Workflow
 
-EventSphere aims to provide:
+```text
+Select Category
+       +
+Select Job Type
+       +
+Select Work Mode
+       +
+Select Experience
+       +
+Select Schedule
+       +
+Set Salary
+       ↓
+Apply Filters
+       ↓
+JavaScript Array.filter()
+       ↓
+Render Matching Jobs
+```
 
-- ✅ 100% paperless event workflow
-- ✅ Reduced check-in queue time
-- ✅ Instant ticket verification
-- ✅ Automated attendance management
-- ✅ Automated certificate generation
-- ✅ Centralized event management
-- ✅ Better organizer analytics
-- ✅ Improved attendee experience
+Available sorting includes:
+
+- Most Relevant
+- Salary High to Low
+- Salary Low to High
+- Newest First
+
+The uploaded implementation contains these filtering and sorting controls. fileciteturn5file6L773-L802
+
+---
+
+# 📋 Application Workflow
+
+The application logic prevents a logged-in user from repeatedly applying to the same job.
+
+Conceptually:
+
+```text
+User clicks Apply
+       ↓
+Check Login
+       ↓
+Check Existing Application
+       ↓
+Save Application
+       ↓
+Save to localStorage
+       ↓
+Show Success Toast
+       ↓
+Update UI
+```
+
+The implementation stores the application with a job ID and timestamp and persists it as `nexus_applications` in localStorage. fileciteturn5file9L908-L916
+
+---
+
+# 🧪 Testing Checklist
+
+## Authentication
+
+- [ ] Register with valid information
+- [ ] Test invalid email
+- [ ] Test duplicate email
+- [ ] Test weak password
+- [ ] Test password confirmation
+- [ ] Login with valid credentials
+- [ ] Login with invalid credentials
+- [ ] Logout
+
+## Job Search
+
+- [ ] Search jobs
+- [ ] Filter by category
+- [ ] Filter by salary
+- [ ] Filter by work mode
+- [ ] Filter by experience
+- [ ] Filter by schedule
+- [ ] Sort jobs
+- [ ] Clear filters
+
+## Applications
+
+- [ ] Apply while logged out
+- [ ] Apply while logged in
+- [ ] Apply to same job twice
+- [ ] Check application status
+- [ ] Check My Applications
+
+## Profile
+
+- [ ] Edit profile
+- [ ] Upload profile image
+- [ ] Check image preview
+- [ ] Check initials fallback
+- [ ] Check profile completion
+
+## Responsive UI
+
+- [ ] Desktop
+- [ ] Tablet
+- [ ] Mobile
+
+---
+
+# ⚠️ Limitations
+
+Because NexusHire is currently a front-end-only project:
+
+- No real server-side authentication
+- No centralized database
+- No real employer account management
+- No real-time job synchronization
+- No production payment system
+- No email service
+- No resume/CV processing
+- localStorage data is browser-specific
+- Passwords should not be stored this way in production
+
+Therefore, this version should be considered an **academic/demo front-end project**, not a production recruitment platform.
 
 ---
 
 # 🚀 Future Scope
 
-The system can be enhanced with:
+The project can be upgraded with a real backend.
 
-### 💳 Production Payment Gateway
+### Backend
 
-Integrate:
+Possible technologies:
 
-- Razorpay
-- Stripe
-- PayPal
+```text
+Node.js
+Express.js
+MongoDB
+```
 
-### 📱 Mobile Application
+### Future Features
 
-Develop native/mobile applications using:
+- Real user authentication
+- Secure password hashing
+- Employer dashboard
+- Admin dashboard
+- Real job posting
+- Resume/CV upload
+- Resume parsing
+- Email notifications
+- Application notifications
+- Employer analytics
+- Interview scheduling
+- Job recommendation system
+- AI-powered resume matching
+- Cloud database
+- Production deployment
 
-- Flutter
-- React Native
-
-### 🤖 AI Recommendation Engine
-
-Add personalized event recommendations based on:
-
-- User interests
-- Previous bookings
-- Categories
-- Location
-- Ratings
-
-### ☁️ Cloud Deployment
-
-Deploy the system using:
-
-- AWS
-- Azure
-- Google Cloud
-- Render
-- Railway
-
-### 🔔 Advanced Notifications
-
-Add:
-
-- Push notifications
-- SMS notifications
-- WhatsApp notifications
+The project presentation specifically identifies **Node.js + MongoDB**, resume/CV parsing, email notifications, and an employer analytics dashboard as future scope. fileciteturn5file3L458-L473
 
 ---
 
-# 🧪 Testing
-
-Before deployment, test:
-
-### Authentication
-
-- Registration
-- Login
-- Logout
-- Password reset
-- Email verification
-- Role permissions
-
-### Events
-
-- Create event
-- Edit event
-- Delete event
-- Approve/reject event
-- Search/filter event
-
-### Booking
-
-- Ticket booking
-- Ticket cancellation
-- QR generation
-- Duplicate QR prevention
-
-### Attendance
-
-- QR scanning
-- Manual attendance
-- Attendance reports
-
-### Certificates
-
-- Certificate generation
-- Certificate verification
-- PDF download
-
----
-
-# ⚠️ Security Notes
-
-For production deployment:
-
-- Use environment variables for secrets.
-- Never commit API keys or passwords.
-- Use HTTPS.
-- Configure secure Django settings.
-- Use strong password hashing.
-- Validate uploaded files.
-- Restrict file types and sizes.
-- Implement proper role-based permissions.
-- Secure JWT tokens.
-- Use a production database.
-- Configure CORS carefully.
-- Enable CSRF protection.
-- Keep dependencies updated.
-
----
-
-# 🎓 Academic Learning Outcomes
+# 📚 Key Learning Outcomes
 
 This project demonstrates practical knowledge of:
 
-- Python
-- Django
-- Django MVT architecture
-- REST APIs
-- Authentication
-- JWT
-- Role-based authorization
-- Django ORM
-- Database management
-- HTML
-- CSS
-- JavaScript
+- HTML5 semantic structure
+- CSS3
+- Flexbox
+- CSS Grid
+- Responsive design
 - Bootstrap
-- QR code generation
-- PDF generation
-- API integration
-- Email services
-- Event management
-- File uploads
-- Data validation
+- JavaScript DOM manipulation
+- Event-driven JavaScript
+- Array methods
+- Dynamic rendering
+- Form validation
+- Regular expressions
+- localStorage
+- Session management
+- FileReader API
+- Base64 image preview
+- SPA-style navigation
+- UI/UX design
+- Client-side filtering
+
+The project presentation highlights event-driven JavaScript, reusable render functions, FileReader API, and CSS custom properties as key learning outcomes. fileciteturn5file3L464-L468
+
+---
+
+# 🎯 Project Objectives
+
+The main objectives of NexusHire are:
+
+1. Create a simple job discovery platform.
+2. Help students and freshers find relevant opportunities.
+3. Provide powerful job filtering.
+4. Provide a simple one-click application process.
+5. Allow users to maintain their profiles.
+6. Provide application tracking.
+7. Demonstrate modern front-end development.
+8. Build a responsive and user-friendly SPA.
+9. Demonstrate client-side data persistence.
+10. Provide a foundation for future full-stack development.
 
 ---
 
 # 👨‍💻 Project Team
 
-| Name | Enrollment | Branch |
+| Name | Enrollment Number | Role |
 |---|---|---|
-| **Patel Harshkumar** | 24002171710023 | CSE_AI |
-| **Chauthari Tirth** | 25002170220003 | IT |
-| **Gediya Poojan** | 24002170210025 | IT |
+| **Patel Harshkumar Kanaiyalal** | 24002171710023 | Team Lead |
+| **Shah Ansh Shashinbhai** | 25002170420012 | UI Designer |
+| **Gediya Poojan Hareshbhai** | 24002170210025 | JavaScript |
+
+The team details are listed in the project presentation. fileciteturn5file0L24-L41
+
+---
+
+# 🎓 Academic Project
+
+**Project Name:** NexusHire – Job Portal Website
+
+**Project Type:** Full Stack Development / Front-End Academic Project
+
+**Current Implementation:** Front-End SPA
+
+**Target Users:**
+
+- Students
+- Freshers
+- Job Seekers
+- Employers
+- Recruiters
+
+The current version intentionally focuses on front-end engineering without a server, backend, or database. fileciteturn5file0L48-L62
+
+---
+
+# ⭐ Project Highlights
+
+```text
+✅ Job Portal Website
+✅ Single Page Application
+✅ Job Search
+✅ Advanced Multi-Filter
+✅ Salary Range Filter
+✅ Remote / Hybrid / Onsite
+✅ Junior / Mid / Senior
+✅ Full-Time / Part-Time
+✅ Fixed / Hourly / Contract
+✅ One-Click Applications
+✅ My Applications
+✅ User Dashboard
+✅ Profile Management
+✅ Profile Photo Upload
+✅ Password Strength Checker
+✅ Login & Signup
+✅ Form Validation
+✅ localStorage Persistence
+✅ Responsive Design
+✅ Bootstrap
+✅ Font Awesome
+✅ Google Fonts
+✅ Toast Notifications
+✅ Dynamic Job Rendering
+```
 
 ---
 
@@ -975,38 +765,10 @@ This project demonstrates practical knowledge of:
 
 This project is developed for **educational and academic purposes**.
 
-You may modify and extend the project for learning, college submissions, and portfolio purposes.
+It may be modified and extended for learning, college submissions, demonstrations, and portfolio purposes.
 
 ---
 
-# ⭐ Project Highlights
+## 💼 NexusHire
 
-```text
-✅ Smart Event Management
-✅ Role-Based Authentication
-✅ Admin Dashboard
-✅ Organizer Dashboard
-✅ User Dashboard
-✅ Event CRUD
-✅ Search & Filters
-✅ Ticket Booking
-✅ QR Code Tickets
-✅ QR Attendance
-✅ PDF Tickets
-✅ Automated Certificates
-✅ Certificate Verification
-✅ Weather API
-✅ Email Notifications
-✅ Reviews & Ratings
-✅ Favorites
-✅ Reports
-✅ Analytics
-✅ REST APIs
-✅ Django ORM
-```
-
----
-
-## 🎟️ EventSphere
-
-> **Plan. Book. Attend. Verify. Celebrate.**
+> **Discover. Apply. Connect. Get Hired.**
